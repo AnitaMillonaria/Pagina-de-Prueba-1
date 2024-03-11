@@ -1,0 +1,617 @@
+
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2? family= Aclonica & display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Noto+Serif+Display:ital,wght@1,100&display=swap');
+
+/*Normalize*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Variables*/
+:root {
+
+    /*colores*/
+
+    --beige: #FFCF9D;
+    --crema: #F5F5DC;
+    --amarillo: #FFB000;
+    --verde: #004225;
+    --rojo: #FF0303;
+
+    /*fuentes*/
+    --Titulos: "Aclonica";
+    --texto: "Noto Serif";
+}
+
+body {
+    padding: 0 30px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+
+    /*     width: 98%; */
+    height: 180px;
+    border: 3px #004225 solid;
+    /*     margin: 20px 60px 20px 20px; */
+    border-radius: 20px;
+}
+
+.logotipo {
+    background-image: url(../assets/Logo-Enca.png);
+    margin-left: 30px;
+   
+}
+
+.titulos h1 {
+
+    font-family: var(--Titulos);
+    color: black;
+    text-align: center;
+
+}
+
+.titulos h2 {
+
+    font-family: var(--texto);
+    color: black;
+    text-align: center;
+
+}
+
+.opciones-menu {
+    margin-right: 30px;
+}
+
+
+/* FLEXBOX*/
+#opciones:checked~.lista-des {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    background-color: var(--amarillo);
+    row-gap: 25px;
+    top: 180px;
+    /* El menú aparece un poco más abajo para dejar ver el botón que lo cierra con más facilidad */
+    right: 30px;
+    border-radius: 0 20px;
+    padding: 20px;
+
+}
+
+#opciones {
+    display: none;
+}
+
+.menu-opcion {
+    font-size: 1rem;
+}
+
+.lista-des {
+    display: none;
+    list-style: none;
+    column-gap: 15px;
+    font-size: 1rem;
+    /* Aumento del tamaño de la letra */
+}
+
+.contenedor {
+
+    /*     height: 500px; */
+
+    padding: 20px 0;
+    background-color: black;
+    /*     margin: 20px 40px 20px 20px; */
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /*     margin-left: 30px; */
+    color: var(--crema);
+    align-items: center;
+    /* Centrado en el eje X de el contenedor, eje X porque son columnas. */
+
+    border-radius: 20px;
+
+}
+
+.imagen {
+    height: 200px;
+    width: 200px;
+    background-size: cover;
+    /*     margin-top: 50px; */
+    /* Reemplazo por padding en container, asi arriba y abajo se dispone la misma separación con el borde */
+
+    border-radius: 15px;
+    /* Detalle para suavizar borde */
+}
+
+#sorrentinos {
+    width: 80%;
+    /*     height: 200px; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.A {
+
+    background-image: url(../assets/Imagen\ 1.png);
+    background-repeat: no-repeat;
+
+
+}
+
+.salsa {
+    font-family: var(--texto);
+    color: var(--crema);
+    /* Blanco para ver las letras que eran negras en un fondo oscuro */
+    font-size: xx-large;
+}
+
+#ravioles {
+    width: 80%;
+    /*     height: 200px; */
+    /* LIMITACIONES DE ALTURA, ES PROBLEMATICO  */
+    display: flex;
+    flex-direction: row-reverse;
+    /* Row pero en sentido contrario */
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.B {
+    background-image: url(../assets/imagen\ 2.png);
+    background-repeat: no-repeat;
+    width: 60%;
+
+}
+
+.rrr {
+    font-family: var(--texto);
+    font-size: xx-large;
+    color: var(--crema);
+    /* Blanco para ver las letras que eran negras en un fondo oscuro */
+}
+
+/* Footer*/
+footer {
+
+    /*     height: 700px; */
+    background-color: var(--beige);
+    /*     margin-left: 30px;
+    margin-right: 100px;
+
+    margin-bottom: 50px;
+ */
+
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-family: var(--Titulos);
+    padding-top: 50px;
+}
+
+h2 {
+    text-align: center;
+    font-size: var(--texto);
+    margin-top: 50px;
+
+}
+
+h3 {
+    color: var(--verde);
+    margin-left: 50px;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+.pie {
+    /*     width: 90%; */
+    height: 400px;
+    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: var(--texto);
+
+}
+
+.columna {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+p {
+    text-align: left;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+.botón {
+    position: absolute;
+}
+
+.botón i {
+    color: var(--rojo);
+    font-size: medium;
+}
+
+.primero {
+    padding-bottom: 30px;
+    margin-left: 20px;
+    text-decoration: underline;
+
+}
+
+.segundo {
+
+    padding-bottom: 30px;
+    margin-left: 10px;
+    text-decoration: underline;
+
+}
+                                          /*Media Queries*/
+
+@media( min-width:50px) and (max-width:481px)/* 1) pantalla mínima/celular*/
+{
+    
+header{
+    background-color:pink;
+    height: 140px;
+}
+
+
+.opciones-menu{
+display:flex;
+}
+.lista-des{
+    font-size: 0.7rem;
+    
+}
+#opciones:checked~.lista-des {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    background-color: var(--amarillo);
+    row-gap: 8px;
+    top: 140px;
+    /* El menú aparece un poco más abajo para dejar ver el botón que lo cierra con más facilidad */
+    right: 30px;
+    border-radius: 0 20px;
+    padding: 8px;}
+.titulos h1
+{
+    font-size: 0.8rem;
+    text-align: center;
+}
+.titulos h2
+
+.opciones-menu
+#opciones:checked~.lista-des
+#opciones
+.menu-opcion
+
+
+.contenedor
+.imagen
+#sorrentinos
+{
+    width: max-content;
+    /*     height: 200px; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+ 
+}
+.A
+{
+    background-image: url(../assets/Imagen\ 1\ celular.png);
+
+    width:80px;
+   height: 80px;
+    
+}
+.salsa
+{
+    font-size: 1rem;
+    margin-top: 40px;
+}
+#ravioles
+{
+    margin-top: 0;
+}
+.B
+{
+    background-image: url(../assets/imagen\ 2\ celular.png);
+    width:80px;
+    height: 59px;
+}
+.rrr
+{
+    font-size: 1rem;
+    margin-top: 40px;
+}
+footer
+
+h1
+{
+    font-size: 1.2rem;
+}
+h2
+h3
+.pie
+{font-size: small;
+    margin-left: 30px;
+    
+    
+    
+
+}
+/*.columna
+p
+.boton
+.boton-i*/
+.primero
+{
+    font-size: 1.2rem;
+    margin-left: 5px;
+   
+}
+.segundo
+{
+    font-size: 1.2rem;
+}
+ul
+{
+    font-size: 1rem;
+
+}
+b
+{
+display: none;
+}
+}
+/* 2) pantalla mediana/tablet*/
+@media(min-width:482px) and (max-width:768px){
+
+header{
+    background:rgb(123, 190, 123);
+    height:140px;
+    
+}
+
+.opciones-menu{
+display:flex;
+}
+.lista-des{
+    font-size: 0.7rem;
+}
+
+.titulos h1
+{
+    font-size: 0.8rem;
+}
+
+
+#opciones:checked~.lista-des
+{
+   
+        display: flex;
+        flex-flow: column;
+        position: absolute;
+        background-color: var(--amarillo);
+        row-gap: 8px;
+        top: 140px;
+        /* El menú aparece un poco más abajo para dejar ver el botón que lo cierra con más facilidad */
+        right: 30px;
+        border-radius: 0 20px;
+        padding: 8px;
+}
+#opciones
+.menu-opcion
+.lista-des
+
+#sorrentinos
+{
+    width: max-content;
+    /*     height: 200px; */
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+ 
+}
+
+.A
+{
+    background-image: url(../assets/Imagen\ 1\ celular.png);
+
+   width: 80px;
+   height: 59px;
+
+    
+}
+.salsa
+{
+    font-size: 1rem;
+    margin-top: 40px;
+}
+#ravioles
+.B
+{ background-image: url(../assets/imagen\ 2\ celular.png);
+    width:80px;
+    height: 59px;
+}
+
+.rrr
+{
+    font-size: 1rem;
+}
+footer
+h1
+{
+    font-size: 1rem;
+}
+h2
+h3
+.pie
+{
+font-size: small;
+margin-left: 30px;
+display: flex;
+justify-content: space-around;
+
+}
+
+.columna
+/*
+p
+.boton
+.boton-i*/
+.primero
+{
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+.segundo
+{
+    font-size: 1.2rem;
+}
+ul
+{
+    font-size: 1rem;
+}
+b{
+    display: none;
+}
+}
+
+/* 3) pantalla grande/laptop*/
+@media ( min-width:769px) and (max-width:1279px) {
+    
+    header{
+        background-color:lightskyblue;
+        height: 180px;
+    }
+    
+    .opciones-menu{
+    display:flex; 
+    font-size: 1rem;
+    }
+    
+    
+    .logotipo
+    .titulos h1
+    .titulos h2
+    .opciones-menu
+    #opciones:checked~.lista-des
+    {
+        top: 200px;
+
+    }
+
+    .menu-opcion
+    .lista-des
+    .contenedor
+    .imagen
+    #sorrentinos
+    .A
+    .salsa
+    {
+        font-size: medium;
+    }
+    #ravioles
+    .B
+    .rrr
+    {
+    font-size: medium;
+    }
+    footer
+    h1
+    h2
+    h3
+    .pie
+    {font-size: small;
+    
+    }
+}
+    /*.columna
+    p
+    .boton
+    .boton-i
+    .primero
+    .segundo
+    
+/* 4) pantalla X grande/smart tv*/
+@media (min-width:1280px) and ( max-width:1280px){
+header{
+    background-color:grey;
+    height: 180px;
+}
+
+.opciones-menu
+{
+display:flex;
+}
+
+
+.logotipo
+.titulos h1
+.titulos h2
+.opciones-menu
+#opciones:checked~.lista-des{
+top:250px;
+}
+#opciones
+.menu-opcion
+.lista-des
+.contenedor
+.imagen
+#sorrentinos
+.A
+.salsa
+#ravioles
+.B
+.rrr
+footer
+h1
+h2
+h3
+.pie
+{
+    font-size: 1rem;
+}
+
+
+/*.columna
+p
+.boton
+.boton-i
+.primero
+.segundo*/
+
+
+}
