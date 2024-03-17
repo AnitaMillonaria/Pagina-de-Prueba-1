@@ -1,6 +1,6 @@
 
-/*Google Fonts*/
-@import url('https://fonts.googleapis.com/css2? family= Aclonica & display=swap');
+/*Google Fonts
+@import url('https://fonts.googleapis.com/css2? family= Aclonica & display=swap');*/
 
 
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Noto+Serif+Display:ital,wght@1,100&display=swap');
@@ -272,6 +272,13 @@ p {
     text-decoration: underline;
 
 }
+myButton
+{
+    border-radius: 20px;
+    font-size: 3rem;
+    padding: 30px;
+    margin-bottom: 50px;
+}
                                           /*Media Queries*/
 
 @media( min-width:50px) and (max-width:481px)/* 1) pantalla mínima/celular*/
@@ -358,10 +365,13 @@ footer
 
 h1
 {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 h2
 h3
+{
+    font-size: 0.6rem;
+}
 .pie
 {font-size: small;
     margin-left: 30px;
@@ -386,7 +396,7 @@ p
 }
 ul
 {
-    font-size: 1rem;
+    font-size: 0.7rem;
 
 }
 b
